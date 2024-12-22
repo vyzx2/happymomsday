@@ -1,0 +1,242 @@
+/* General Styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8EDE3;
+}
+
+section {
+    background-color: #F8EDE3;
+}
+
+#hero {
+    background-color: #F8EDE3;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+}
+
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.hero-row {
+    align-items: center;
+}
+
+.col-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.col-text h1 {
+    font-family: "Radley", serif;
+    font-size: 95px;
+    color: #a08b7d;
+    font-weight: 600;
+}
+
+.col-text h3 {
+    font-family: "Radley", serif;
+    font-size: 25px;
+    color: #a08b7d;
+    margin-top: 10px;
+    padding-right: 100px;
+}
+
+.col-text button {
+    border: 0;
+    border-radius: 8px;
+    background-color: #a08b7d;
+    width: 250px;
+    padding: 15px 0;
+    font-size: 23px;
+    color: #F8EDE3;
+    margin-top: 20px;
+    font-family: "Radley", serif;
+}
+
+.col-text button:hover{
+    scale: 1.1;
+    color: #a08b7d;
+    border: 2px solid #a08b7d;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px #a08b7d;
+}
+
+.col-image {
+    width: 30%;
+}
+
+.col-image img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+#reasons {
+    background-color: #F8EDE3;
+    height: 100vh;
+}
+
+#reasons h2 {
+    font-family: "Radley", serif;
+    font-size: 48px;
+    color: #a08b7d;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#reasons .row {
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+#reasons .col {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 20px;
+}
+
+#reasons .cards {
+    height: 350px;
+    border: 1px solid #a08b7d;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+#reasons h1{
+    font-size: 65px;
+    font-family: "Radley", serif;
+    margin-bottom: 30px;
+    color: #a08b7d;
+}
+
+#reasons p {
+    font-size: 18px;
+    color: #a08b7d;
+}
+
+.card-2 {
+    margin-top: 40px;
+}
+
+.card-3 {
+    margin-top: 80px;
+}
+
+.card-4 {
+    margin-top: 120px;
+}
+
+audio {
+    display: none;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+}
+
+
+@media (max-width: 1024px) {
+    .col-text {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .col-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .col-text h1 {
+        font-size: 60px;
+    }
+
+    .col-text h3 {
+        font-size: 18px;
+        align-items: center;
+    }
+
+    #reasons .col {
+        width: 50%;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .col-text h1 {
+        font-size: 45px;
+    }
+
+    .col-text h3 {
+        font-size: 16px;
+    }
+
+    .col-image {
+        width: 80%;
+    }
+
+    #reasons h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #reasons .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #reasons .cards {
+        height: auto;
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .col-text h1 {
+        font-size: 35px;
+    }
+
+    .col-text button {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    #reasons h2 {
+        font-size: 28px;
+    }
+    }

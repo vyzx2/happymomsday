@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Mothers Day!</title>
+</head>
+
+<body>
+    <!-- Hero Section-->
+    <section id="hero">
+        <div class="container">
+            <div class="row hero-row">
+                <div class="col-text">
+                    <h1>Happy <br> Mother's Day!</h1>
+                    <h3>Do you want to know why you're the best?</h3>
+                    <a href="#reasons"><button>Let's Find Out!</button></a>
+                </div>
+                <div class="col-image">
+                    <img src="umikuu.png" alt="loving mother and daughter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reasons">
+        <div class="container">
+            <h2>Here are the reasons why!</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="cards card-1">
+                        <h1>01</h1>
+                        <p>For being my Mother, of course!<br><br>
+                            Thank you for bringing me into this world and being the best mother I could ever ask for 💗</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cards card-2">
+                        <h1>02</h1>
+                        <p>You had raised me well and for that, I couldn't thank you enough.<br><br> 
+                            But for this once, I want to thank you. Without you, Mother, I wouldn't be who I am today.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cards card-3">
+                        <h1>03</h1>
+                        <p>The most briliant woman I've ever met 🤩 <br><br>
+
+                            I hope I can inherit those genes of yours 🫣 </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cards card-4">
+                        <h1>04</h1>
+                        <p>Last but obviously not the least, for surviving up until now. <br><br>
+                            Words couldn't describe how much you mean to me and how much I care and love you. <br><br>
+                            All that I want to say is you're the best, I love you, and thank you for all of your hardwork! 💖</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Backsound-->
+    <audio id="backSound" autoplay loop>
+        <source src="kalimba bunda.mp3">
+    </audio>
+
+    <script>
+        let audio = document.getElementById('backSound');
+        document.body.addEventListener('click', (e) => {
+            console. log("Klik terdeteksi pada:", e. target);
+            audio.muted = false;
+            audio.currentTime = 196;
+            audio.play()
+                .then(() => {
+                    console.log("Backsound mulai diputar!");
+                })
+                .catch(error => {
+                    console.error("Gagal memutar audio:", error);
+                });
+        });
+    </script>
+</body>
+</html>
